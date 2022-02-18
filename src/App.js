@@ -40,8 +40,7 @@ function App() {
     let copy = [...posts]
     let layout = posts[0]
     let date = new Date().toLocaleString()
-    console.log(date)
-    copy.push({
+    copy.unshift({
       ...layout,
       title:e.target.postTitle.value,
       content:e.target.postContent.value,
